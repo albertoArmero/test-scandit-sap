@@ -8,7 +8,8 @@ import { Barcode, BarcodePicker, Camera, CameraAccess, CameraSettings, ScanResul
 })
 export class AppComponent  {
   name = 'Angular';
-    public activeSettings: ScanSettings;
+  
+  public activeSettings: ScanSettings;
   public settings128: ScanSettings;
   public settings39: ScanSettings;
   public scannerGuiStyle: BarcodePicker.GuiStyle = BarcodePicker.GuiStyle.VIEWFINDER;
