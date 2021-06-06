@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ScanditSdkModule } from "scandit-sdk-angular";
 
+import {MatIconModule} from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { ConfigModule } from '@spartacus/core';
 import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule, defaultCmsContentConfig } from '@spartacus/storefront';
@@ -16,6 +19,7 @@ const engineLocation: string = "https://cdn.jsdelivr.net/npm/scandit-sdk@5.x/bui
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     
     B2cStorefrontModule.withConfig({
 
@@ -40,7 +44,8 @@ const engineLocation: string = "https://cdn.jsdelivr.net/npm/scandit-sdk@5.x/bui
     }
 
     }),
-    ScanditSdkModule.forRoot(licenseKey, {engineLocation})
+    ScanditSdkModule.forRoot(licenseKey, {engineLocation}),
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

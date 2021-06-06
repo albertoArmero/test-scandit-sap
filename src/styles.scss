@@ -1,11 +1,12 @@
 /* Add application styles & imports to this file! */
 $primary:red;
 @import '@spartacus/styles/index';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 
 // sass variable
 
 $size: 6vmax;
-
 
 cx-product-images {
   .thumbs {
